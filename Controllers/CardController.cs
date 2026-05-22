@@ -58,7 +58,6 @@ namespace ApiProdutos.Controllers
             return CreatedAtAction(nameof(GetById), new { id = card.IdCard }, card);
         }
 
-        // PUT: api/card/1
         [HttpPut("{id}")]
         public async Task<ActionResult> Update(int id, Card card)
         {
